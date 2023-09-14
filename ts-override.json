@@ -1,0 +1,53 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./",
+    "paths": {
+      "api/*": [
+        "src/api/*"
+      ],
+      "@/*": [
+        "src/components/*"
+      ],
+      "assets/*": [
+        "src/assets/*"
+      ],
+      "controllers/*": [
+        "src/controllers/*"
+      ],
+      "images/*": [
+        "src/assets/images/*"
+      ],
+      "utils/*": [
+        "src/utils/*"
+      ],
+      "states/*": [
+        "src/states/*"
+      ],
+      "queries/*": [
+        "src/queries/*"
+      ],
+      "hooks/*": [
+        "src/hooks/*"
+      ],
+      "config/*": [
+        "src/config/*"
+      ],
+      "tracking/*": [
+        "src/tracking/*"
+      ],
+      "types/*": [
+        "src/types/*"
+      ],
+      "validation/*": [
+        "src/validation/*"
+      ]
+    },
+    "strictNullChecks": true,
+    "strictPropertyInitialization": false
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    "out"
+  ]
+}

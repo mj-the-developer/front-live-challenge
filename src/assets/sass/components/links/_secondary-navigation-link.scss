@@ -1,0 +1,17 @@
+.secondary-navigation-link {
+  .Polaris-Link {
+    border-radius: 8px;
+    display: block;
+    padding: var(--p-space-2) !important;
+    text-decoration: none !important;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #f7f7f7;
+    }
+  }
+  &.selected {
+    .Polaris-Link {
+      background-color: #f1f1f1;
+    }
+  }
+}

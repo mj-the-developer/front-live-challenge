@@ -1,0 +1,19 @@
+.feature-style-link {
+  border-radius: 5px;
+  padding: 10px;
+  transition: all 0.4s;
+  .Polaris-Thumbnail {
+    background: #f4f6f8;
+    border: none;
+    transition: all 0.4s;
+  }
+  .Polaris-Link {
+    text-decoration: none !important;
+  }
+  &:hover {
+    background-color: #f9fafb;
+    .Polaris-Thumbnail {
+      background: #dfe3e8;
+    }
+  }
+}

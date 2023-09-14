@@ -1,0 +1,40 @@
+.wizard-step {
+  .Polaris-LegacyCard {
+    box-shadow: none;
+    .Polaris-LegacyCard__Section {
+      padding-top: 0;
+    }
+  }
+  .wizard-step-header {
+    background-color: transparent;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 15px 5px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #f6f6f7;
+    }
+  }
+  .wizard-step-content {
+    padding: 5px 160px 20px 45px;
+    position: relative;
+    .wizard-step-illustration {
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      width: 120px;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wizard-step {
+    .wizard-step-content {
+      padding: 5px 20px 20px 45px;
+      .wizard-step-illustration {
+        display: none;
+      }
+    }
+  }
+}

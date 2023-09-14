@@ -1,0 +1,19 @@
+.Polaris-Frame__Content {
+  padding-bottom: 20px;
+}
+
+.Polaris-Layout__AnnotatedSection {
+  .Polaris-Layout__Annotation {
+    padding: 0 !important;
+
+    .Polaris-TextContainer > *:not(:first-child) {
+      margin-top: 5px !important;
+    }
+  }
+}
+
+.Polaris-Link {
+  &:hover {
+    text-decoration: none !important;
+  }
+}

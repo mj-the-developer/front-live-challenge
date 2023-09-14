@@ -1,0 +1,15 @@
+.usage-progress-bar-wrapper {
+  position: relative;
+  width: 250px;
+  .progress-bar {
+    width: 200px;
+    .Polaris-ProgressBar {
+      height: 5px;
+    }
+  }
+  .usage-progress-bar-counter {
+    position: absolute;
+    right: 0;
+    top: 4px;
+  }
+}

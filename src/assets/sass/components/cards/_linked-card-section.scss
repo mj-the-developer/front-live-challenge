@@ -1,0 +1,25 @@
+.linked-card-section {
+  .Polaris-LegacyCard__Section {
+    padding: 0;
+  }
+  .Polaris-Link {
+    display: block;
+    padding: var(--p-space-3) !important;
+    text-decoration: none !important;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #f6f6f7;
+    }
+  }
+  &:not(:last-child) {
+    border-bottom: 1px solid #e1e3e5;
+  }
+}
+
+@media screen and (min-width: 30.625em) {
+  .linked-card-section {
+    .Polaris-Link {
+      padding: var(--p-space-5);
+    }
+  }
+}

@@ -1,0 +1,42 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_IMAGE: '$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA'
+  DOCKER_IMAGE_LATEST: '$CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:latest'
+
+build:
+  stage: build
+  image: docker:git
+  only:
+    - production
+    - beta
+  services:
+    - docker:dind
+  before_script:
+    - API_URL_VAR=API_URL_$CI_COMMIT_BRANCH
+    - export API_URL=$( eval echo \$$API_URL_VAR )
+    - API_KEY_VAR=API_KEY_$CI_COMMIT_BRANCH
+    - export API_KEY=$( eval echo \$$API_KEY_VAR )
+  script:
+    - docker login -u build-image -p $CI_BUILD_TOKEN registry.ronash.co
+    - docker build -f deploy/Dockerfile -t $DOCKER_IMAGE --build-arg REACT_APP_API_URL=$API_URL --build-arg branch=$CI_COMMIT_BRANCH --build-arg buildId=$CI_COMMIT_SHA --build-arg pipelineId=$CI_PIPELINE_ID --build-arg REACT_APP_API_KEY=$API_KEY .
+    - docker push $DOCKER_IMAGE
+    - docker tag $DOCKER_IMAGE $DOCKER_IMAGE_LATEST
+    - docker push $DOCKER_IMAGE_LATEST
+
+deploy:
+  stage: deploy
+  only:
+    - production
+    - beta
+  inherit:
+    variables: false
+  variables:
+    DEVELOPMENT: frontend
+    TAG: $TAG
+  trigger:
+    project: discounty/discounty-deploy
+    branch: $CI_COMMIT_BRANCH
+    strategy: depend

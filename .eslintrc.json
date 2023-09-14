@@ -1,0 +1,67 @@
+{
+  "extends": ["react-app", "react-app/jest"],
+  "rules": {
+    "import/order": [
+      "warn",
+      {
+        "groups": [["builtin", "external"], ["index", "sibling", "parent", "internal", "object"], ["type"]],
+        "newlines-between": "always",
+        "pathGroups": [
+          {
+            "pattern": "@/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "api/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "api",
+            "group": "internal"
+          },
+          {
+            "pattern": "assets/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "images/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "utils/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "states/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "hooks/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "config/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "tracking/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "types/**",
+            "group": "type"
+          },
+          {
+            "pattern": "controllers/**",
+            "group": "internal"
+          },
+          {
+            "pattern": "validation/**",
+            "group": "internal"
+          }
+        ],
+        "pathGroupsExcludedImportTypes": ["builtin"]
+      }
+    ]
+  }
+}

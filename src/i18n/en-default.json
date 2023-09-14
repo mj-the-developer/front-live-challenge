@@ -1,0 +1,326 @@
+{
+  "badges": {
+    "new": "New"
+  },
+  "buttons": {
+    "add_discount_tier": "Add discount tier",
+    "apply": "Apply",
+    "browse": "Browse",
+    "cancel": "Cancel",
+    "no": "No",
+    "refresh": "Refresh",
+    "save_as": "Save as",
+    "yes": "Yes"
+  },
+  "campaigns_page": {
+    "title": "Campaigns",
+    "action": "Create campaign",
+    "search_placeholder": "Searching all discount"
+  },
+  "campaign_schedule": {
+    "title": "Time (GMT-5:00) America/New_York"
+  },
+  "combinations": {
+    "title": "Combinations"
+  },
+  "contact_support": {
+    "title": "Email us",
+    "subtitle": "Need guidance? Contact {{app_name}} support!",
+    "action": "Send email",
+    "campaign_creation": "Campaign creation"
+  },
+  "current_plan_card": {
+    "active_discounted_variants": "Active discounted variants",
+    "created_campaigns": "Created campaigns",
+    "title": "Current plan:"
+  },
+  "custom_notifications": {
+    "title": "Custom notifications",
+    "description": "Select when you want to get notified when a new change occurs in your campaigns."
+  },
+  "discount_preview": {
+    "title": "Discount preview",
+    "on_product_page": "On product page",
+    "products_without_cap": "For products without \"compare-at price\"",
+    "products_with_cap": "For products with \"compare-at price\"",
+    "before": "Before",
+    "after": "After",
+    "on_card": "On card",
+    "total": "Total",
+    "subtotal": "Subtotal",
+    "saving": "Saving"
+  },
+  "discount_pricing_type": {
+    "fixedamount": "Fixed amount",
+    "percentage": "Percentage",
+    "fixedprice": "New price"
+  },
+  "discount_settings": {
+    "manage_shopify_discounts": "Manage Shopify discounts",
+    "discount_widget_customization": "Discount widget customization",
+    "enable_widget": "Enable and customize widgets on \"app embeds\" section in your theme settings to show discount value",
+    "product_page_widget": "Product page widget",
+    "cart_page_widget": "Cart page widget"
+  },
+  "discount_type": {
+    "general": "General discount and clearance sale",
+    "volume": "Quantity and volume discount sale"
+  },
+  "estimated_products_count": {
+    "title": "Estimated products count:",
+    "products_count": "<strong>{{products_count}}</strong> Products",
+    "variants_count": "{{variants_count}} variants"
+  },
+  "feature_request_card": {
+    "title": "Feature request",
+    "subtitle": "Please share your thoughts and needs about our application and tell us what would make you more happy :)",
+    "action": "Send feature request"
+  },
+  "field_labels": {
+    "action_notifications_enable": "Your actions notifications",
+    "apply_independently": "Apply to each item in the cart independently",
+    "automatic_update": "Automatically update eligible products with every change to store products",
+    "campaign_expiration_start_notifications_enable": "Scheduled campaign expiration started",
+    "campaign_finish_notifications_enable": "Campaign finished",
+    "campaign_name": "Campaign name",
+    "campaign_process_start_notifications_enable": "Scheduled campaign processing started",
+    "campaign_start_notifications_enable": "Campaign started",
+    "campaign_status": "Campaign status",
+    "combinations_policy": "This campaign can be combined with:",
+    "compare_at_price": "Compare-at price",
+    "contact_email": "Contact email",
+    "date": "Date",
+    "discount_amount": "Discount amount",
+    "discount_calculation_policy": "Discount calculation policy",
+    "discount_code": "Discount code",
+    "discount_policy": "Discount policy",
+    "discount_policy_change_price": "Change sale price and calculate discounts based on:",
+    "discount_policy_keep_price": "Keep sale price and increase \"compare-at price\"",
+    "discount_pricing_type": "Discount/Pricing",
+    "discount_type": "Discount type",
+    "end_date": "End date",
+    "end_time": "End time",
+    "excludes": "Excludes",
+    "from": "From",
+    "general_combinations_policy": "General discount and clearance sale campaigns",
+    "min_purchase_amount": "Minimum purchase amount",
+    "min_purchase_requirements": "Minimum purchase requirements",
+    "min_quantity": "Minimum quantity of items",
+    "only_once_per_order": "Only apply discount once per order",
+    "order_submitted_notifications_enable": "Order on discounted products is submitted",
+    "prevent_combination": "Prevent combination with Shopify discounts",
+    "price": "Price",
+    "schedule": "Schedule",
+    "set_price_endings": "Set specific price endings",
+    "specific_price_endings": "Specific price endings",
+    "quantity": "Quantity",
+    "set_end_date": "Set end date",
+    "start_date": "Start date",
+    "start_time": "Start time",
+    "starts_immediately": "Starts immediately",
+    "subject": "Subject",
+    "time": "Time",
+    "to": "To",
+    "volume_combinations_policy": "Quantity and volume discount sale campaigns",
+    "your_message": "Your message",
+    "your_name": "Your name"
+  },
+  "field_place_holders": {
+    "discount_code": "Discount code",
+    "from": "From",
+    "search": "Search",
+    "to": "To"
+  },
+  "help_articles": {
+    "title": "Articles",
+    "introduction": "Introduction to {{app_name}}",
+    "how_to_campaign": "How to create campaign",
+    "important_tips": "Important tips",
+    "faq": "FAQ",
+    "others": "Other articles"
+  },
+  "help_page": {
+    "title": "Help",
+    "articles": "Help articles",
+    "feature_request": "Feature request",
+    "contact_support": "Contact support"
+  },
+  "help_texts": {
+    "apply_independently": "If not selected, the minimum requirements will be applied to all items in the cart together.",
+    "campaign_name": "For internal use only",
+    "contact_email": "We'll use this email address to inform you about your account, important changes and reports.",
+    "disable_combination_keep_sale_price": "The campaign can't be combined with general discount when the discount is set to \"{{discount_policy_label}}\"",
+    "disable_combination_new_price": "The campaign can't be combined with {{discount_type}}when the discount is set to 'new price'",
+    "only_once_per_order": "If not selected, the amount will be taken off each eligible item in an order.",
+    "prevent_combination": "Enabling this option will deactivate Shopify \"amount off products\" discounts (both automatic discounts and discount codes) on products in your Discounty active campaigns.",
+    "price_endings": "e.g., 5.68 ➔ 5.{{ending}}",
+    "action_notifications_enable": "Email will be sent to you when you create a new campaign or make changes to the status of a campaign",
+    "campaign_process_start_notifications_enable": "Email will be sent to you when the process of adding discounts starts as scheduled",
+    "campaign_expiration_start_notifications_enable": "Email will be sent to you when an active campaign expires as scheduled, and the process of removing discounts starts",
+    "campaign_start_notifications_enable": "Email will be sent to you when the process of adding discounts is finished and discounts are live on your store",
+    "campaign_finish_notifications_enable": "Email will be sent to you when the process of deactivating a campaign is finished and discounts have been removed from your store",
+    "order_submitted_notifications_enable": "Email will be sent to you when customers purchase products from your active campaigns at a discounted price"
+  },
+  "home_page": {
+    "action": "Create campaign",
+    "title": "Home"
+  },
+  "leave_page_modal": {
+    "content": "If you leave this page, any unsaved changes will be lost.",
+    "primary_action": "Leave page",
+    "secondary_action": "Cancel",
+    "title": "Unsaved changes"
+  },
+  "onboarding": {
+    "title": "Let's start step by step",
+    "subtitle": "Dear admin of {{store}}, boost your customers conversions with a discount sale",
+    "create_campaign_title": "Create your first discount campaign",
+    "create_campaign_subtitle": "Add discount to your products by creating a discount campaign",
+    "create_campaign_action": "Create campaign",
+    "product_page_title": "Show the volume and quantity discount on the product page",
+    "product_page_content_1": "1. Go to \"<strong>App embeds</strong>\" section of your theme settings",
+    "product_page_content_2": "2. Enable the Discounty's \"<strong>product price</strong>\" extension",
+    "product_page_content_3": "3. Save your changes",
+    "product_page_action": "Enable product widget",
+    "cart_page_title": "Display the discount value on the cart page",
+    "cart_page_content_1": "1. Go to \"<strong>App embeds</strong>\" section of your theme settings",
+    "cart_page_content_2": "2. Enable Discounty's \"<strong>saving on cart</strong>\" app extension",
+    "cart_page_content_3": "3. Customize the text and appearance of the widget",
+    "cart_page_content_4": "4. Save your changes",
+    "cart_page_action": "Enable cart widget"
+  },
+  "ordering_choice": {
+    "title": "Sort by",
+    "created_at": "Created at",
+    "end_time": "End time",
+    "name": "Name",
+    "order_count": "Order count",
+    "products_count": "Products count",
+    "revenue": "Revenue",
+    "start_time": "Start time"
+  },
+  "ordering_choice_type": {
+    "alphabetic_asc": "A-Z",
+    "alphabetic_desc": "Z-A",
+    "count_asc": "Most",
+    "count_desc": "Least",
+    "date_asc": "Latest",
+    "date_desc": "Earliest",
+    "undefined_asc": "Ascending",
+    "undefined_desc": "Descending"
+  },
+  "page": {
+    "back_action": "Back to previous page"
+  },
+  "plan_card": {
+    "free_trial": "{{days_count}} days free trial",
+    "variants_limit": "Up to {{limit}} variants with live discount",
+    "unlimited_variants": "Unlimited variants with live discount",
+    "campaigns_limit": "Create up to {{limit}} campaigns",
+    "unlimited_campaigns": "Create unlimited campaigns",
+    "all_prev_plan": "All {{prev_plan}} features, plus"
+  },
+  "plans_page": {
+    "title": "Plans"
+  },
+  "period_selection": {
+    "monthly": "Monthly",
+    "yearly": "Annual (Save {{discount_percent}})"
+  },
+  "product_status": {
+    "active": "Active",
+    "archived": "Archived",
+    "draft": "Draft"
+  },
+  "products_selection": {
+    "title": "Products"
+  },
+  "product_selection_filter": {
+    "all": "All store",
+    "collections": "Collections",
+    "tags": "Tags",
+    "vendors": "Vendors",
+    "product_type": "Product type",
+    "price_range": "Price range",
+    "products_variants": "Products and variants"
+  },
+  "routes": {
+    "campaigns": "Campaigns",
+    "help": "Help",
+    "home": "Home",
+    "plans": "Plans",
+    "settings": "Settings"
+  },
+  "settings_page": {
+    "title": "Settings",
+    "manage_discounts": "Manage discounts",
+    "custom_notifications": "Custom notifications"
+  },
+  "single_campaign_page": {
+    "title": "Create campaign"
+  },
+  "statistics": {
+    "active_campaigns": "<strong>{{count}} Active</strong> campaigns",
+    "scheduled_campaigns": "<strong>{{count}} Scheduled</strong> campaigns",
+    "inactive_campaigns": "<strong>{{count}} Inactive</strong> campaigns",
+    "expired_campaigns": "<strong>{{count}} Expired</strong> campaigns",
+    "products_count": "{{products_count}} Products ({{variants_count}} variants)",
+    "revenue_amount": "{{revenue_amount}} revenue ({{orders_count}} orders)"
+  },
+  "status": {
+    "All": "All",
+    "Active": "Active",
+    "Scheduled": "Scheduled",
+    "Inactive": "Inactive",
+    "Expired": "Expired"
+  },
+  "summary_card": {
+    "title": "Summary",
+    "no_campaign": "No campaign name yet",
+    "no_discount": "No discount value yet",
+    "discount_type_value": "Discount type and value",
+    "details": "Details",
+    "applies_to": "Applies to {{filter}}",
+    "starts_on": "Starts on {{datestring}}",
+    "ends_on": "Ends on {{datestring}}",
+    "discount_off": "{{discount}} off",
+    "new_price": "New price: {{discount}}"
+  },
+  "table_actions": {
+    "activate_campaigns": "Activate campaigns",
+    "deactivate_campaigns": "Deactivate campaigns"
+  },
+  "table_filters": {
+    "start_date": "Start date",
+    "campaign_status": "Status",
+    "type": "Type"
+  },
+  "table_headings": {
+    "discount": "Discount",
+    "name": "Name",
+    "orders": "Orders",
+    "products": "Products",
+    "revenue": "Revenue",
+    "start_date": "Start date",
+    "status": "Status",
+    "time": "Time",
+    "total_orders": "Total orders",
+    "type": "Type"
+  },
+  "top_campaigns": {
+    "title": "Top {{count}} campaigns",
+    "view_all": "View all campaigns",
+    "no_campaigns": "There are no campaigns with sales"
+  },
+  "unsaved_changes_bar": {
+    "default_message": "Unsaved Changes",
+    "discard": "Discard",
+    "save": "Save"
+  },
+  "was_helpful": {
+    "title": "Was this page helpful?"
+  },
+  "wizard": {
+    "progress_label": "{{passed_steps_count}} of {{steps_count}} tasks complete"
+  }
+}

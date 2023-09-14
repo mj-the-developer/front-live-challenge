@@ -1,0 +1,17 @@
+.campaigns-table-tabs {
+  position: relative;
+  .campaigns-table-tabs-actions {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .campaigns-table-tabs {
+    .campaigns-table-tabs-actions {
+      display: none;
+    }
+  }
+}
