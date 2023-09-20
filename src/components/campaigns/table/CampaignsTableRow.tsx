@@ -4,6 +4,8 @@ import { useTranslation } from 'react-multi-lang';
 import { AdaptedCampaign } from '../CampaignsAdapter';
 import { PATHS } from 'config/constants';
 
+import { Status } from 'types/globalTypes';
+
 type Props = {
   campaign: AdaptedCampaign;
   selectedResources: string[];
@@ -32,7 +34,7 @@ export const CampaignsTableRow = ({ campaign, selectedResources }: Props) => {
       </IndexTable.Cell>
       <IndexTable.Cell>-</IndexTable.Cell>
       <IndexTable.Cell>
-        <Badge status={campaign.badgeStatus}>{campaign.status}</Badge>
+        <Badge status={campaign.status === Status.Active ? 'success' : 'new'}>{campaign.status}</Badge>
       </IndexTable.Cell>
       <IndexTable.Cell>{`${campaign.productsCount} (${campaign.variantsCount} variants)`}</IndexTable.Cell>
       <IndexTable.Cell>

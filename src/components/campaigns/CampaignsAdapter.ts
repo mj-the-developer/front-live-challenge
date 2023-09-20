@@ -1,5 +1,4 @@
 import { GetCampaigns_campaigns } from 'queries/types/GetCampaigns';
-import { Status as BadgeStatus } from '@shopify/polaris/build/ts/src/components/Badge';
 
 import { convertToDateTime } from 'utils/dateTimeUtils';
 
@@ -11,7 +10,6 @@ export type AdaptedCampaign = {
   discount: string;
   type: string;
   status: Status | string;
-  badgeStatus: BadgeStatus;
   productsCount: number | string;
   variantsCount: number | string;
   startDate: string | null;
@@ -30,7 +28,6 @@ export class CampaignsAdapter {
       discount: this.formatDiscount(campaign.structure?.discount?.discount, campaign.structure?.discount?.discountType),
       type: '-',
       status: campaign.status ?? '-',
-      badgeStatus: this.getBadgeStatus(campaign.status),
       productsCount: '-',
       variantsCount: '-',
       startDate: this.formatDate(campaign.structure?.startedAt),
@@ -60,25 +57,6 @@ export class CampaignsAdapter {
         return `New price: $${amount}`;
       default:
         return '-';
-    }
-  }
-
-  private getBadgeStatus(status: Status | null): BadgeStatus {
-    switch (status) {
-      case Status.Active:
-        return 'success';
-      case Status.Archived:
-        return 'info';
-      case Status.Canceled:
-        return 'warning';
-      case Status.Inactive:
-        return 'new';
-      case Status.Processing:
-        return 'info';
-      case Status.Scheduled:
-        return 'attention';
-      default:
-        return 'new';
     }
   }
 }

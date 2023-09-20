@@ -10,14 +10,14 @@ export const useCampaigns = () => {
   const { urlSearchParams } = useURLSearchParams();
 
   // @ts-ignore
-  const [campaigns, setCampaigns] = useState<AdaptedCampaign[]>(campaignsData);
+  const [campaigns, setCampaigns] = useState<AdaptedCampaign[]>([]);
 
   useEffect(() => {
-    const filteredCampaigns = filterCampaigns(campaigns, urlSearchParams);
+    const filteredCampaigns = filterCampaigns(campaignsData, urlSearchParams);
     const sortedCampaigns = sortCampaigns(filteredCampaigns, urlSearchParams);
 
     setCampaigns(sortedCampaigns);
-  }, [campaigns, urlSearchParams]);
+  }, [urlSearchParams]);
 
   return { campaigns, loading: false };
 };
